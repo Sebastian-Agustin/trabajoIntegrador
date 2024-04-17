@@ -1,0 +1,143 @@
+
+//reset
+@import "base/reset";
+//tipography
+@import "base/typography";
+
+//components
+@import "components/mq-tablet";
+//desktop
+@import "components/mq-desktop";
+
+//abstracts
+@import "abstracts/mixins";
+//var
+@import "abstracts/var";
+
+//htmls
+@import "html/tattos.scss";
+
+@import "html/nosotros.scss";
+
+@import "html/estudio.scss";
+
+@import "html/cuidados.scss";
+
+@import "html/contacto.scss";
+
+
+
+
+
+
+
+
+
+body{
+    @include grid-body;
+} 
+
+
+//index
+
+header  {
+    @include grid-col-row;
+    @include flex-header;
+    .header-img img{
+        @include width-heigth(50%, auto); 
+    }
+  //navbar
+    nav{
+        @include width-heigth(50%, auto);
+        
+        ul{
+            display: flex;
+            gap:$ul-gap;
+            list-style:$list-style;
+            text-shadow:$text-shadow; 
+            li:hover{
+                background-color:$bg-body; 
+                a{
+                    text-decoration:$text-decoration;
+                }
+           }
+            
+        }
+    }
+ 
+} 
+
+//main
+main{
+    @include grid-col-row;
+    margin: 20px 10px;
+    //contenedor
+    .main-container{
+     @includ
+     }  
+        //contenido
+    .imagen {
+            img{
+                @include width-heigth(100%, auto);
+            }
+           
+        }
+     
+    .div-texto1{
+        text-align:$text-aling;
+       //items
+        p{
+            text-align:$text-aling;
+            
+        }
+        h1{
+            text-align:$text-aling;
+            @include h1;
+        }
+       }
+    .div-texto2{
+        padding: 10px;
+        text-align:$text-aling;
+        h2{
+            text-align:$text-aling;
+        }
+    }    
+    
+    .mapa{
+        display:$display-none;
+    }
+    .ubi-mapa{
+        display:$display-none;
+        }
+  }   
+//footer
+  footer {
+   @include footer;
+    //container
+
+    .footer-container{
+        @include footer-container;
+            //nav
+            nav{
+              @include nav;
+            //div-ul
+            .navbar-footer{
+                @include nav;
+                //ul
+                ul{
+                  @include flex-main-container;
+                    padding: 10px;
+                    list-style:$list-style;
+                    gap:$ul-gap;
+                }
+            }
+        }
+        .footer-copyright{
+            @include flex-main-container;
+            h2{
+                font-size: 12px;
+            }
+            
+        }
+    }
+}

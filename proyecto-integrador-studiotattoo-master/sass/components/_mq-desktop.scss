@@ -1,0 +1,69 @@
+/*media qr desktop*/
+@media screen and (min-width: 1024px) {
+    header{
+        justify-content: space-around;
+        padding: 10px;
+        nav{
+            .div-botones{
+                padding: 0px 10px;
+             }
+        }
+        .header-img {
+            width: 20%;
+            height: auto;
+            
+         }
+    }
+
+ /*Main*/
+ main{
+    .main-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    row-gap: 10px;
+    .imagen{
+        grid-column: 1/4;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .div-texto1{
+        grid-column: 4/7;
+        grid-row: 1;
+        width: 100%;
+        padding: 50px 0px 0px 0px;
+        text-align: center;
+     }
+     .div-texto2{
+        grid-column: 2/6;
+        grid-row: 2;
+        margin: 30px 10px;
+        text-align: center;
+        padding-top: 20px;
+     }
+     .grid-img{
+        grid-column: 2/6;
+        grid-row: 3;
+        width: 90%;
+        height: 50%;
+        padding: 10px;
+        margin: 10px 0px 0px 0px;
+     }
+     
+     .mapa{
+        grid-column: 1/5;
+        grid-row: 4;
+        margin: 10px 0px 0px 0px;
+      
+       }
+
+       .ubi-mapa{
+        grid-column: 1/5;
+        grid-row: 5;
+        margin: 10px 0px 0px 0px;
+       padding: 20px;
+     }
+    }
+} 
+  }
