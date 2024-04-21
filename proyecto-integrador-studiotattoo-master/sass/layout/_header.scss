@@ -1,0 +1,29 @@
+@import "../abstracts/mixin";
+@import"../abstracts/var";
+
+header{
+    @include grid-col-row;
+    @include flex-header;
+    .header-img img{
+        @include width-heigth(50%, auto); 
+    }
+  //navbar
+    nav{
+        @include width-heigth(50%, auto);
+        
+        ul{
+            display: flex;
+            gap:$ul-gap;
+            list-style:$list-style;
+            text-shadow:$text-shadow; 
+            li:hover{
+                background-color:$bg-body; 
+                a{
+                    text-decoration:$text-decoration;
+                }
+           }
+            
+        }
+    }
+ 
+} 
