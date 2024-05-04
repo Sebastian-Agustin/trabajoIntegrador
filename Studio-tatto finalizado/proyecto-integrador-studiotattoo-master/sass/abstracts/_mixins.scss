@@ -1,0 +1,38 @@
+@mixin grid-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 1fr 1fr;
+    
+}
+
+//mixin - header
+@mixin header {
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 30px;
+    
+    
+}
+
+@mixin width-height($width, $height){
+    width:$width;
+    height:$height;
+}
+
+
+@mixin main{
+    grid-column: 1/7;
+    grid-row: auto;
+    margin: 20px 10px;
+}
+
+
+@mixin footer{
+    grid-column: 1/7;
+    padding: 50px;
+    grid-row: auto;
+}
+
+
+

@@ -1,0 +1,47 @@
+@import "../abstracts/mixins";
+@import "../abstracts/var";
+
+
+
+footer {
+ @include footer;
+
+  
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      //navbar        
+      nav {
+     
+        .navbar-footer {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          
+          ul {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 10px;
+            list-style: none;
+            gap: 20px;
+            a{
+              img{
+                @include width-height(60%, 30%)
+              }
+            }
+          }
+        }
+      }
+      
+      div{
+        
+        text-align: center;
+        h2{
+          font-size:20px;
+        }
+      }
+    }
+  }

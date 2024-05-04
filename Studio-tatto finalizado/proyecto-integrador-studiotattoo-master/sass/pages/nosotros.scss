@@ -1,0 +1,169 @@
+@import "../abstracts/mixins";
+@import"../abstracts/var";
+//Css mq mobil
+
+
+
+
+.container-3{
+   //h1
+
+   .item-1{
+  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+    
+    h1{
+         background-color: whitesmoke;
+        color: $bg-body;
+        text-align: center;
+        margin: 10px 0px;
+        padding: 20px 0px;
+          }
+        h2{
+            margin: 60px 0px;
+            padding: 40px 10px;
+            border-top: 2px solid whitesmoke;
+            text-align:center;
+
+        
+        }
+             p{
+                text-align: center;
+            padding: 0px 50px 0px 50px;
+            margin: 0px 0px 0px 0px;
+          }  
+        }
+        
+
+
+        .div-img-1{
+            display: flex;
+            justify-content: flex-start;
+            padding: 50px 50px;
+            width: 100%;
+           img{
+            width: 100%;
+            height: 100%;
+           }
+        }
+   }
+  
+   //segundo item-2
+   .item-2{
+     display: flex;
+     align-content: center;
+     padding: 20px 50px;
+     flex-flow: column wrap;
+    
+   
+    //div texto
+   .div-img-2{
+    padding: 10px;
+    @include width-height (100%, auto);
+    
+  
+    img{
+        @include width-height (100%, 100%);
+    }
+
+   }
+
+   .texto{
+    text-align: center;
+    padding: 20px 40px;
+    h3{
+      padding: 0px 20px;
+    }
+   }
+
+   
+   }
+
+@media  screen and (min-width: 1224px) {
+    
+.container-3{
+    //h1
+ 
+    .item-1{
+   
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     
+     h1{
+          background-color: whitesmoke;
+         color: $bg-body;
+         text-align: center;
+         margin: 10px 0px;
+         padding: 20px 0px;
+           }
+         h2{
+             margin: 60px 0px;
+             padding: 20px 10px;
+             text-align:center;
+ 
+         
+         }
+              p{
+                 text-align: center;
+             padding: 0px 50px 0px 50px;
+             margin: 0px 0px 0px 0px;
+           }  
+         }
+         
+ 
+ 
+         .div-img-1{
+             display: flex;
+             justify-content: flex-start;
+             padding: 50px 50px;
+             width: 50%;
+            img{
+             width: 100%;
+             height: 100%;
+            }
+         }
+    }
+  .div-h3 {
+    padding: 10px;
+    text-align: center;    
+    h3{
+        background-color: whitesmoke;
+        font-size: 20px;
+        color: $bg-body;
+    }
+  }
+    //segundo item-2
+    .item-2{
+      display: flex;
+      align-content: end;
+      padding: 20px 50px;
+    
+     
+    
+     //div texto
+    .div-img-2{
+       
+     @include width-height (50%, auto);
+     
+   
+     img{
+         @include width-height (100%, 100%);
+     }
+ 
+    }
+ 
+    .texto{
+     text-align: center;
+     padding: 20px 10px;
+     width: 50%;
+    }
+ 
+    
+    }
+
+    
+}

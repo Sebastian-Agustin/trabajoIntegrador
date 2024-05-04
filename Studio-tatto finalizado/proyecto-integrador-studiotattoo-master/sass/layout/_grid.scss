@@ -1,0 +1,8 @@
+@import "../abstracts/mixins";
+@import "../abstracts/var";
+body {
+  font-family:merienda;
+   background-color: black;
+  color:$color-typography;
+   
+  }
